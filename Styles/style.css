@@ -1,0 +1,151 @@
+/* Importar fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.Inicio {
+    flex: 1;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.Inicio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.Inicio p {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    color: #e2e8f0;
+    line-height: 1.8;
+}
+
+
+button {
+    margin-top: 25px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(14, 165, 233, 0.4);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.6);
+}
+
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 25px;
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-top: auto;
+}
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Inicio {
+        margin: 40px 20px;
+        padding: 40px 25px;
+    }
+
+    .Inicio h2 {
+        font-size: 2rem;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
